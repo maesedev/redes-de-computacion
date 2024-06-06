@@ -1,0 +1,14 @@
+
+
+ena 
+conf t
+int g0/0/0.100
+encapsulation dot1Q 100
+ip address 172.0.100.3 255.255.255.0
+int g0/0/1
+ip address 6.6.6.1 255.255.255.248
+exit
+router ospf 1
+network 172.0.100.0 0.0.0.255 area 0
+network 6.6.6.0 0.0.0.7 area 0
+exit
