@@ -1,0 +1,2 @@
+Diseño de una red a partir de dos ISP’s los cuales están ubicados en dos ciudades (uno por ciudad).
+Dentro de estas ciudades se debe diseñar un total de 4 localidades por ciudad (cada localidad debe tener su central o core y cada uno de estos cores debe manejar su router con las VLAN de proveedores y usuarios), dentro de estas localidades se debe crear un total de 2 barrios, y dentro de estos barrios se debe tener 2 conjuntos cada uno con 3 viviendas y dentro de estas viviendas se debe 3 equipos conectados.
