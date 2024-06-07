@@ -1,12 +1,15 @@
-ena 
+ena
 conf t
-int fa0/0.100		
-encapsulation dot1Q 100
-ip address 172.0.100.3 255.255.255.0
+int fa0/0.20
+encapsulation dot1Q 20
+ip address 20.20.20.4 255.255.255.0
 int fa0/1
-ip address 6.6.6.1 255.255.255.248
+ip address 10.0.0.1 255.255.255.248
+int fa1/0
+ip address 11.0.0.1 255.255.255.248
 exit
 router ospf 1
-network 172.0.100.0  0.0.0.255 area 0
-network 6.6.6.0      0.0.0.7 area 0
+network 20.20.20.0  0.0.0.255 area 0
+network 10.0.0.0    0.0.0.7 area 0
+network 11.0.0.0    0.0.0.7 area 0
 exit
